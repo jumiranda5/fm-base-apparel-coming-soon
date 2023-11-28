@@ -237,7 +237,8 @@ header {
 }
 
 .input-container {
-    padding-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1.75rem;
 }
 
 .email-input,
@@ -248,7 +249,7 @@ header {
 
 .email-input {
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 0 4.5rem 0 1.5rem;
     border: 1px solid var(--clr-primary);
     outline: none;
     color: var(--clr-primary-dark);
@@ -257,6 +258,27 @@ header {
 
 .email-input::placeholder { 
     color: hsla(0, 36%, 70%, 70%);
+}
+
+.input-error {
+    border: 2px solid var(--clr-accent);
+}
+
+.input-error-icon {
+    display: none;
+    position: absolute;
+    top: .75rem;
+    right: 4.5rem;
+}
+
+.input-error-icon-show { display: block; }
+
+.error-msg {
+    color: var(--clr-accent);
+    font-size: .875rem;
+    margin: 0 1.5rem;
+    position: absolute;
+    bottom: 0;
 }
 
 .submit-btn {
@@ -294,6 +316,11 @@ header {
     .submit-btn {
         width: 6rem;
     }
+
+    .input-error-icon {
+        top: 1rem;
+        right: 6.5rem;
+    }
     
 }
 
@@ -306,10 +333,6 @@ header {
     font-size: .75rem;
     text-align: center;
     padding: 1rem;
-}
-
-.attribution a {
-    color: var(--clr-accent);
 }
 
 @media (min-width:60em) {

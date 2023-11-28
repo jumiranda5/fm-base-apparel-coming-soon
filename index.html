@@ -35,16 +35,20 @@
                 Add your email below to stay up-to-date with announcements and our launch deals.
             </p>
 
-            <form class="email-form" action="#" method="post">
+            <form class="email-form" id="email-form" action="#" method="post">
+
                 <div class="input-container">
                     <label class="sr-only" for="email">Email:</label>
-                    <input class="email-input" id="email" name="email" type="email" placeholder="Email Address" required>
+                    <input class="email-input" id="email" name="email" placeholder="Email Address">
+                    <p id="error-msg" class="error-msg" aria-live="polite"></p>
+                    <img id="error-icon" class="input-error-icon" src="./images/icon-error.svg" alt="">
                 </div>
                 
                 <button class="submit-btn" type="submit">
                     <span class="sr-only">Submit</span>
                     <img src="./images/icon-arrow.svg" alt="">
                 </button>
+                
             </form>
         </div>
         
