@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <script src="./scripts/script.js" defer></script>
@@ -11,18 +14,49 @@
 </head>
 <body>
 
-    We're coming soon
+    <header>
+        <div class="wrapper">
+            <img class="header-logo" src="./images/logo.svg" alt="Base Apparel logo">
+        </div>
+    </header>
 
-    Hello fellow shoppers! We're currently building our new fashion store. 
-    Add your email below to stay up-to-date with announcements and our launch deals.
-  
-    Email Address
+    <picture class="hero-image">
+        <source media="(min-width: 60em)" srcset="./images/hero-desktop.jpg">
+        <img src="./images/hero-mobile.jpg" alt="">
+    </picture>
+    
+    <main>
+
+        <div class="wrapper">
+            <h1 class="main-title">We're <span>coming soon</span></h1>
+            
+            <p class="main-description">
+                Hello fellow shoppers! We're currently building our new fashion store.
+                Add your email below to stay up-to-date with announcements and our launch deals.
+            </p>
+
+            <form class="email-form" action="#" method="post">
+                <div class="input-container">
+                    <label class="sr-only" for="email">Email:</label>
+                    <input class="email-input" id="email" name="email" type="email" placeholder="Email Address" required>
+                </div>
+                
+                <button class="submit-btn" type="submit">
+                    <span class="sr-only">Submit</span>
+                    <img src="./images/icon-arrow.svg" alt="">
+                </button>
+            </form>
+        </div>
+        
+    </main>
     
     <footer>
-        <p class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="https://www.frontendmentor.io/profile/jumiranda5" target="_blank">Juliana Miranda</a>.
-        </p>
+        <div class="wrapper">
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://www.frontendmentor.io/profile/jumiranda5" target="_blank">Juliana Miranda</a>.
+            </p>
+        </div>
     </footer>
     
 </body>
